@@ -131,6 +131,28 @@
           "container"
         ]
       }
+    },
+    "department": {
+      "component": "vtex.render-runtime/LayoutContainer",
+      "context": "vtex.store@1.x/ProductSearchContextProvider",
+      "props": {
+        "elements": [
+          "banner",
+          "categories",
+          "results"
+        ]
+      },
+      "extensions": {
+        "banner": {
+          "component": "vtex.carousel/Carousel"
+        },
+        "categories": {
+          "component": "vtex.shelf/Categories"
+        },
+        "results": {
+          "component": "vtex.search-result/SearchResult"
+        }
+      }
     }
   },
   "pages": {
@@ -179,7 +201,7 @@
     "store/department": [
       {
         "name": "Default",
-        "template": "search"
+        "template": "department"
       }
     ],
     "store/category": [

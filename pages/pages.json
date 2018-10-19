@@ -120,14 +120,17 @@
       "component": "vtex.render-runtime/LayoutContainer",
       "props": {
         "elements": [
-          "quick-delivery",
           "carousel",
+          "quick-delivery",
           "shelf"
         ]
       },
       "extensions": {
         "quick-delivery": {
           "component": "vtex.quick-delivery/QuickDeliveryHome"
+        },
+        "quick-delivery/shelf": {
+          "component": "vtex.shelf/Shelf"
         },
         "carousel": {
           "component": "vtex.carousel/Carousel"
